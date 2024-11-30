@@ -1,0 +1,11 @@
+{application, emqx_duckdb,
+ [{description, "Another amazing EMQX plugin."},
+  {vsn, "0.1.0"},
+  {modules, []},
+  {registered, [emqx_duckdb_sup]},
+  {applications, [kernel, stdlib, educkdb]},
+  {mod, {emqx_duckdb_app, []}},
+  {env, []},
+  {licenses, ["Apache-2.0"]},
+  {maintainers, ["Shawn <506895667@qq.com>"]}
+ ]}.
