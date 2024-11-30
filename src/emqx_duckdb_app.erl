@@ -10,8 +10,7 @@
 
 start(_StartType, _StartArgs) ->
     {ok, Sup} = emqx_duckdb_sup:start_link(),
-    emqx_duckdb:load(application:get_all_env()),
-
+    ok = emqx_duckdb:load(#{}),
     emqx_ctl:register_command(emqx_duckdb, {emqx_duckdb_cli, cmd}),
     {ok, Sup}.
 

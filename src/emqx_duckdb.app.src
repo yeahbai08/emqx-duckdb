@@ -7,5 +7,5 @@
   {mod, {emqx_duckdb_app, []}},
   {env, []},
   {licenses, ["Apache-2.0"]},
-  {maintainers, ["Shawn <506895667@qq.com>"]}
+  {maintainers, ["Yeah <506895667@qq.com>"]}
  ]}.
